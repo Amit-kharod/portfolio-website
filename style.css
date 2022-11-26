@@ -3,9 +3,6 @@
 Font Sizes(px)
 10-12-14-16-20-24-32-36-40-48-64-96-128
 
-Spacing System(px)
-2-4-8-12-16-24-32-48-64-80-96-128
-
 Font Weights
 default- 400
 
@@ -13,12 +10,27 @@ Line Spacing
 defualt- 1
 
 --Colors
-Primary- 
-Secondary-
-Accents-
-Greys-
+Primary- #E85252
+Shades- #FF6B6B
+Secondary- #212529
+Accents- #20C997 #FFE066 
+Greys- #495057 #868E96 
+
+Shadows
+
+Border-Radius
+
+Whitespace
+
+Spacing System(px)
+2-4-8-12-16-24-32-48-64-80-96-128
+
 
 */
+
+html {
+  font-size: 62.5%;
+}
 
 * {
   margin: 0;
@@ -32,3 +44,40 @@ body {
   font-weight: 400;
   color: #343A40;
 }
+
+nav {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 2.4rem;
+  border: black solid 1px;
+  border-radius: 0px 0px 10px 10px;
+
+}
+
+nav button {
+  display: inline-flex;
+  align-items: center;
+  margin: 2rem 1.2rem;
+  background-color: white;
+  border: none;
+}
+
+.nav-item1 {
+  margin-left: 3.5rem;
+}
+
+.nav-item4 {
+  margin-right: 3.5rem;
+}
+
+nav img {
+  width: 1.5rem;
+}
+
+.big-heading {
+  text-align: center;
+  font-size: 12.8rem;
+  font-weight: 800;
+}
+
+
