@@ -14,7 +14,7 @@ Primary- #E85252
 Shades- #FF6B6B
 Secondary- #212529
 Accents- #20C997 #FFE066 
-Greys- #495057 #868E96 
+Greys- #495057 #868E96 #343A40;
 
 Shadows
 
@@ -36,30 +36,35 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #343A40;
 }
 
 body {
   font-family: Montserrat;
   line-height: 1;
   font-weight: 400;
-  color: #343A40;
 }
 
 nav {
-  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
   margin: 0 auto;
   font-size: 2.4rem;
-  border: black solid 1px;
   border-radius: 0px 0px 10px 10px;
-
+  box-shadow: 5px 5px 20px rgb(146, 146, 146);
 }
 
 nav button {
-  display: inline-flex;
-  align-items: center;
+  font-size: 1.6rem;
   margin: 2rem 1.2rem;
   background-color: white;
   border: none;
+}
+
+.active {
+  font-weight: 600;
+  font-size: 2.0rem;
 }
 
 .nav-item1 {
@@ -72,12 +77,91 @@ nav button {
 
 nav img {
   width: 1.5rem;
+  margin-right: .2rem;
 }
 
 .big-heading {
   text-align: center;
-  font-size: 12.8rem;
+  font-size: 12rem;
   font-weight: 800;
+  margin-top: 6.4rem;
+  color: #495057;
 }
 
+.profession {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #FF6B6B;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  border-radius: 40rem;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 1.2rem;
+}
 
+.about-container {
+  max-width: 130rem;
+  margin: 8rem auto;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 5rem;
+  align-items: center;
+  border-radius: 2.5rem;
+  background-color: #212529;
+  margin: 2rem ;
+  padding:4rem 8rem;
+}
+
+.about-section img {
+  width: 23rem;
+  border-radius: 2.5rem;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 5rem;
+}
+
+.about-heading {
+  font-size: 3.2rem;
+  letter-spacing: 1rem;
+  background: linear-gradient(to right,#FFE066,#20C997);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bio {
+  color: white;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.resume-btn {
+  text-decoration: none;
+  color: white;
+  border: white solid 1px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: .7rem 1.2rem;
+}
+
+.home-blob-left, .home-blob-right {
+  position: absolute;
+  width: 25vw;
+  height: fit-content;
+}
+
+.home-blob-right {
+  right: 0;
+  top: 0;
+}
