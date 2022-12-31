@@ -45,7 +45,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #343A40;
+  color: #343440;
 }
 
 body {
@@ -62,6 +62,10 @@ body {
   opacity: 0.98;
   position: sticky;
   top: 0;
+}
+
+.home {
+  background: url(./images/other/black_dots.svg) ;
 }
 
 .logo {
@@ -95,13 +99,11 @@ nav button {
   margin-right: 4.8rem;
 }
 
-
-
 .big-heading {
   text-align: center;
   font-size: 12.8rem;
   font-weight: 800;
-  margin-top: 6.4rem;
+  padding-top: 6.4rem;
   color: #495057;
 }
 
