@@ -13,25 +13,127 @@
   </head>
 
   <body>
+    <nav class="navbar">
+      <span class="logo"
+        ><span class="logo-item1">a</span
+        ><span class="logo-item2">k</span></span
+      >
+      <button class="nav-item1 active">Home</button>
+      <button class="nav-item2">Skills</button>
+      <button class="nav-item3">Projects</button>
+      <button class="nav-item4">Contact</button>
+    </nav>
     <section class="home">
-      <nav>
-        <button class="nav-item1"><img src="images/icons/home.svg" alt="home-icon"><span class="nav-item-text">Home</span> </button>
-        <button class="nav-item2"><img src="images/icons/skills.svg" alt="skills-icon"><span class="nav-item-text">Skills</span></button>
-        <button class="nav-item3"><img src="images/icons/projects.svg" alt="projects-icon"><span class="nav-item-text">Projects</span></button>
-        <button class="nav-item4"><img src="images/icons/contact.svg" alt="contact-icon"><span class="nav-item-text">Contact</span></button>
-      </nav>
-      <h1 class="big-heading">HI! I AM <br> AMIT KHAROD</h1>
-      <h2 class="medium-heading">WEB DEVELOPER</h2>
+      <h1 class="big-heading">
+        HI! I AM <br />
+        AMIT KHAROD
+      </h1>
+      <h2 class="profession">WEB DEVELOPER</h2>
       <div class="about-section">
-        <div class="profile-image">
-          <img src="" alt="my-image">
-        </div>
+        <img src="images/other/profile.jpg" class="profile" alt="my-image" />
         <div class="about-me">
           <h2 class="about-heading">ABOUT ME</h2>
-          <p class="bio">"I am aspiring Full Stack Web Developer, persuing MCA degree. I love teaching programming in a simple and enjoyble manner."</p>
-        <a href="#">MY RESUME</a>
+          <p class="bio">
+            "I am aspiring Full Stack Web Developer, persuing MCA degree. I love
+            teaching programming in a simple and enjoyble manner."
+          </p>
+          <div class="socials">
+            <img src="./images/icons/github.svg" alt="" />
+            <img src="./images/icons/instagram.svg" alt="" />
+            <img src="./images/icons/youtube.svg" alt="" />
+            <img src="./images/icons/linkedin.svg" alt="" />
+            <img src="./images/icons/twitter.svg" alt="" />
+          </div>
         </div>
       </div>
+      <div class="scroll">
+        <img src="./images/icons/down-arrow.svg" alt="" />
+      </div>
+    </section>
+    <section class="skills">
+      <h1 class="section-heading">Skills</h1>
+      <div class="skill-container">
+        <div class="skill">
+          <div class="skill-img">
+            <img src="./images/icons/html5.png" alt="" />
+            <img src="./images/icons/css3.png" alt="" />
+          </div>
+          <div class="skill-heading">HTML & CSS</div>
+          <div class="skill-detail">
+            COMFORTABLE WITH FLEXBOX, GRID, ANIMATION AND RESPONSIVE DESIGN
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-img">
+            <img src="./images/icons/javascript.png" alt="" />
+          </div>
+          <div class="skill-heading">JAVASCRIPT</div>
+          <div class="skill-detail">
+            COMFORTABLE WITH FLEXBOX, GRID, ANIMATION AND RESPONSIVE DESIGN
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-img">
+            <img src="./images/icons/React.png" alt="" />
+          </div>
+          <div class="skill-heading">REACT</div>
+          <div class="skill-detail">
+            COMFORTABLE WITH FLEXBOX, GRID, ANIMATION AND RESPONSIVE DESIGN
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-img">
+            <img src="./images/icons/github.png" alt="" />
+          </div>
+          <div class="skill-heading">GITHUB</div>
+          <div class="skill-detail">
+            COMFORTABLE WITH FLEXBOX, GRID, ANIMATION AND RESPONSIVE DESIGN
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <h1 class="section-heading">Projects</h1>
+        <div class="project">
+          <h2 class="project-heading">UNIVERSITY MANAGEMENT SYSTEM</h2>
+          <div class="project-img"><img src="./images/other/project1.png" alt=""></div>
+          <div class="project-description">
+            This project is based on web technology. So, it is easily accessible
+            for users. Backend is the core of this project. API (Application
+            Programming Interface) is used for communication between Frontend and
+            Backend. Technologies that are used in this project are – Nodejs,
+            Reactjs, CSS, HTML, Heroku, MongoDb. The main feature of this project
+            is to handle complex data through API. REST API is used to handle all
+            backend process.
+          </div>
+        </div>
+        <div class="project">
+          <h2 class="project-heading">PROGRAMMING QUIZ</h2>
+          <div class="project-img"><img src="./images/other/project2.png" alt=""></div>
+          <div class="project-description">
+            This project is based on web technology. So, it is easily accessible
+            for users. Backend is the core of this project. API (Application
+            Programming Interface) is used for communication between Frontend and
+            Backend. Technologies that are used in this project are – Nodejs,
+            Reactjs, CSS, HTML, Heroku, MongoDb. The main feature of this project
+            is to handle complex data through API. REST API is used to handle all
+            backend process.
+          </div>
+      </div>
+    </section>
+    <section class="contact">
+      <h2 class="contact-heading">Contact</h2>
+      <form action="#" class="contact-form">
+        <input type="text" name="first-name" id="first-name" placeholder="First Name">
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="text" name="message" id="message" placeholder="Drop your message here">
+        <button type="submit" id="contact-submit">SEND</button>
+      </form>
+      <footer>
+        <h6 class="end-note">Made with 💙 by Amit Kharod</h6>
+        <div class="source-code"><img src="./images/icons/github.svg" alt=""><h6>Source Code</h6></div>
+      </footer>
     </section>
   </body>
 </html>
