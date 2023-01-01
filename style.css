@@ -62,10 +62,14 @@ body {
   opacity: 0.98;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .home {
-  background: url(./images/other/black_dots.svg) ;
+  background: url(./images/other/black_dots.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .logo {
@@ -166,9 +170,35 @@ nav button {
   display: flex;
 }
 
+.social-img {
+ width: 7rem;
+ height: 7rem;
+ background-color: #000000;
+ border-radius: 100%;
+ margin-right: 2rem;
+ cursor: pointer;
+ transition: all .2s ease-in-out;
+}
+
 .socials img {
-  width: 5rem;
-  margin-right: 4rem;
+  padding: 2rem;
+  width: 7rem;
+}
+
+.social-img:nth-child(1):hover {
+  background-color:#696969;
+}
+.social-img:nth-child(2):hover {
+  background-color:#f03482;
+}
+.social-img:nth-child(3):hover {
+  background-color:#f03434;
+}
+.social-img:nth-child(4):hover {
+  background-color:#3b7dd4;
+}
+.social-img:nth-child(5):hover {
+  background-color:#33cbdf;
 }
 
 .scroll {
@@ -203,7 +233,8 @@ nav button {
   grid-template-columns: 1fr 1fr;
   width: fit-content;
   gap: 2rem;
-  margin: 6.4rem auto;
+  margin: 0 auto;
+  padding-top: 9.6rem;
 }
 
 .skill {
@@ -212,9 +243,10 @@ nav button {
   justify-content: center;
   align-items: center;
   background-color: rgb(233, 233, 233);
-  width: 60rem;
+  max-width: 60rem;
   height: 35rem;
   border-radius: 3.2rem;
+  transition: all .2s ease-in-out;
 }
 
 .skill img {
@@ -230,7 +262,7 @@ nav button {
 
 .skill-detail {
   color: #868E96;
-  width: 70%;
+  max-width: 70%;
   line-height: 1.5;
   text-align: center;
   font-size: 1.6rem;
@@ -252,10 +284,92 @@ nav button {
   background: linear-gradient(#F3F3F3,#fff);
 }
 
+.skill:nth-child(1):hover{
+  background: linear-gradient(#bcddff,#fff);
+}
+
+.skill:nth-child(2):hover{
+  background: linear-gradient(#fff0b8,#fff);
+}
+
+.skill:nth-child(3):hover{
+  background: linear-gradient(#aef4ff,#fff);
+}
+
+.skill:nth-child(4):hover{
+  background: linear-gradient(#cacaca,#fff);
+}
+
+.skill:hover {
+  transform: translateY(-2rem);
+}
+
+.exp-history {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6rem;
+  padding-top: 9.6rem;
+}
+
+.exp {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.exp:last-child {
+  border-bottom: none;
+}
+
+.exp-date {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.experience img {
+  margin-right: 1rem;
+}
+
+.exp-details {
+  display: grid;
+  gap: 1rem;
+}
+
+.exp-details h3 {
+  font-size: 2rem;
+}
+
+.address {
+  display: flex;
+}
+
+.address h3 {
+  margin-right: 2rem;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location h3 {
+  font-weight: 400;
+}
+
+.exp-list {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
 .project {
   display: grid;
   grid-template-columns: 1.5fr 2fr;
-  width: 130rem;
+  max-width: 130rem;
   margin: 9.6rem auto;
   row-gap: 4rem;
   column-gap: 4.8rem;
@@ -274,14 +388,36 @@ nav button {
 }
 
 .project-description {
+  display: flex;
+  flex-direction: column;
   line-height: 2;
+}
+
+.black-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 5rem;
+  background-color: white;
+  color: #212529;
+  text-decoration: none;
+  border-radius: .5rem;
+  margin-top: 2.4rem;
+  font-weight: 600;
+  transition: all .2s ease-in-out;
+}
+
+.black-btn:hover{
+  color: white;
+  background-color: #212529;
 }
 
 .projects {
   background: linear-gradient(to right,#E4E5FF,#fff);
   padding: 1rem;
-  margin-top: 9.6rem;
   color: #868E96;
+  margin-top: 9.6rem;
 }
 
 .contact {
@@ -321,8 +457,12 @@ nav button {
   height: 12.8rem;
 }
 
-.contact-form input::placeholder {
+.contact-form input {
   padding-left: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.contact-form input::placeholder {
   font-size: 1.6rem;
 }
 
@@ -342,4 +482,16 @@ footer {
 .source-code img {
   width: 1.4rem;
   margin-right: .5rem;
+}
+
+
+/* reusable classes */
+
+.small-icon {
+  width: 2rem;
+}
+
+
+.very-small-icon {
+  width: 1.5rem;
 }
