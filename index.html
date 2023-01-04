@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amit Kharod</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="./main.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
@@ -17,12 +18,12 @@
         ><span class="logo-item1">a</span
         ><span class="logo-item2">k</span></span
       >
-      <button class="nav-item1 active">Home</button>
-      <button class="nav-item2">Skills</button>
-      <button class="nav-item3">Projects</button>
-      <button class="nav-item4">Contact</button>
+      <button class="nav-item active" data-block="home">Home</button>
+      <button class="nav-item" data-block="skills">Skills</button>
+      <button class="nav-item" data-block="projects">Projects</button>
+      <button class="nav-item" data-block="contact">Contact</button>
     </nav>
-    <section class="home">
+    <section id="home">
       <h1 class="big-heading">
         HI! I AM <br />
         AMIT KHAROD
@@ -55,7 +56,7 @@
         <img src="./images/icons/down-arrow.svg" alt="" />
       </div>
     </section>
-    <section class="skills">
+    <section id="skills">
       <h1 class="section-heading">Skills</h1>
       <div class="skill-container">
         <div class="skill">
@@ -98,7 +99,7 @@
       </div>
     </section>
 
-    <section class="experience">
+    <section id="experience">
       <h1 class="section-heading">Experience</h1>
       <div class="exp-history">
         <div class="exp">
@@ -154,7 +155,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section id="projects">
       <h1 class="section-heading">Projects</h1>
       <div class="project">
         <h2 class="project-heading">UNIVERSITY MANAGEMENT SYSTEM</h2>
@@ -162,15 +163,15 @@
           <img src="./images/other/project1.png" alt="" />
         </div>
         <div class="project-description">
-          <p
-            >This project is based on web technology. So, it is easily
-            accessible for users. Backend is the core of this project. API
-            (Application Programming Interface) is used for communication
-            between Frontend and Backend. Technologies that are used in this
-            project are – Nodejs, Reactjs, CSS, HTML, Heroku, MongoDb. The main
-            feature of this project is to handle complex data through API. REST
-            API is used to handle all backend process.</p
-          >
+          <p></p>
+            This project is based on web technology. So, it is easily accessible
+            for users. Backend is the core of this project. API (Application
+            Programming Interface) is used for communication between Frontend
+            and Backend. Technologies that are used in this project are –
+            Nodejs, Reactjs, CSS, HTML, Heroku, MongoDb. The main feature of
+            this project is to handle complex data through API. REST API is used
+            to handle all backend process.
+          </p>
           <a href="#" class="black-btn">Explore </a>
         </div>
       </div>
@@ -180,20 +181,20 @@
           <img src="./images/other/project2.png" alt="" />
         </div>
         <div class="project-description">
-          <p
-            >This project is based on web technology. So, it is easily
-            accessible for users. Backend is the core of this project. API
-            (Application Programming Interface) is used for communication
-            between Frontend and Backend. Technologies that are used in this
-            project are – Nodejs, Reactjs, CSS, HTML, Heroku, MongoDb. The main
-            feature of this project is to handle complex data through API. REST
-            API is used to handle all backend process.</p
-          >
+          <p>
+            This project is based on web technology. So, it is easily accessible
+            for users. Backend is the core of this project. API (Application
+            Programming Interface) is used for communication between Frontend
+            and Backend. Technologies that are used in this project are –
+            Nodejs, Reactjs, CSS, HTML, Heroku, MongoDb. The main feature of
+            this project is to handle complex data through API. REST API is used
+            to handle all backend process.
+          </p>
           <a href="#" class="black-btn">Explore </a>
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section id="contact">
       <h2 class="contact-heading">Contact</h2>
       <form action="#" class="contact-form">
         <input

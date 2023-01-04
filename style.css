@@ -65,7 +65,7 @@ body {
   z-index: 1;
 }
 
-.home {
+#home {
   background: url(./images/other/black_dots.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,7 +99,11 @@ nav button {
   color: #343a40;
 }
 
-.nav-item4 {
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-item:last-child {
   margin-right: 4.8rem;
 }
 
@@ -413,14 +417,14 @@ nav button {
   background-color: #212529;
 }
 
-.projects {
+#projects {
   background: linear-gradient(to right, #e4e5ff, #fff);
   padding: 1rem;
   color: #868e96;
   margin-top: 9.6rem;
 }
 
-.contact {
+#contact {
   background: linear-gradient(to right, #ff866b, #ff006b);
 }
 
@@ -429,7 +433,7 @@ nav button {
   padding-top: 12.8rem;
   text-align: center;
 }
-.contact * {
+#contact * {
   color: white;
 }
 
@@ -614,7 +618,7 @@ footer {
   }
 
   .bio {
-    font-size: 2.2rem
+    font-size: 2rem
   }
   .about-section {
     max-width: 90vw;
@@ -654,10 +658,12 @@ footer {
 }
 
 @media (max-width: 530px) {
-  .big-heading {
-    font-size: 6rem;
+  html {
+    font-size: 7px;
   }
-  .profession{
-    font-size: 2.2rem;
+
+  footer {
+    font-size: 2.4rem;
   }
 }
+
