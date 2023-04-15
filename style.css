@@ -39,6 +39,7 @@ Spacing System(px)
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -70,13 +71,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 9.6rem;
 }
 
 .logo {
   margin-right: auto;
   align-self: center;
   margin-left: 6.4rem;
-  font-size: 64px;
+  font-size: 6.4rem;
   letter-spacing: -14px;
   font-weight: 300;
 }
@@ -85,22 +87,20 @@ body {
   color: #ff6b6b;
 }
 
-nav button {
-  font-size: 1.6rem;
-  color: #868e96;
-  margin: 3.2rem 2.4rem;
-  background-color: white;
-  font-weight: 600;
-  border: none;
-}
-
 .active {
   font-size: 2.4rem;
   color: #343a40;
 }
 
-.nav-item {
+nav a {
   cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #868e96;
+  margin: 3.2rem 2.4rem;
+  background-color: white;
+  font-weight: 600;
+  border: none;
 }
 
 .nav-item:last-child {
@@ -111,7 +111,6 @@ nav button {
   text-align: center;
   font-size: 12.8rem;
   font-weight: 800;
-  padding-top: 6.4rem;
   color: #495057;
 }
 
@@ -126,6 +125,21 @@ nav button {
   font-size: 2rem;
   font-weight: 800;
   margin-top: 1.2rem;
+}
+
+.follower-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: 4rem auto;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .about-section {
@@ -203,6 +217,10 @@ nav button {
 }
 .social-img:nth-child(5):hover {
   background-color: #33cbdf;
+}
+
+.mongo {
+  width: 15rem !important;
 }
 
 .scroll {
@@ -285,7 +303,7 @@ nav button {
 }
 
 .skill:nth-child(4) {
-  background: linear-gradient(#f3f3f3, #fff);
+  background: linear-gradient(#ecfcca, #fff);
 }
 
 .skill:nth-child(1):hover {
@@ -301,7 +319,7 @@ nav button {
 }
 
 .skill:nth-child(4):hover {
-  background: linear-gradient(#cacaca, #fff);
+  background: linear-gradient(#d4ee9d, #fff);
 }
 
 .skill:hover {
@@ -425,72 +443,40 @@ nav button {
 }
 
 #contact {
-  background: linear-gradient(to right, #ff866b, #ff006b);
+  background: #343440;
 }
 
 .contact-heading {
-  font-size: 4rem;
-  padding-top: 12.8rem;
+  font-size: 3rem;
+  padding-top: 4.8rem;
   text-align: center;
 }
 #contact * {
   color: white;
 }
 
-.contact-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 80rem;
-  margin: 4.8rem auto;
-  row-gap: 1.6rem;
-  column-gap: 4rem;
-}
-
-.contact-form * {
-  height: 5rem;
-  border: none;
-  opacity: 0.8;
-  color: #212529;
-}
-
-#email,
-#message,
-#contact-submit {
-  grid-column-start: span 2;
-}
-
-#message {
-  height: 12.8rem;
-}
-
-.contact-form input {
-  padding-left: 1.6rem;
-  font-size: 1.6rem;
-}
-
-.contact-form input::placeholder {
-  font-size: 1.6rem;
-}
-
-#contact-submit {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #fff;
-  opacity: 1;
-  background: #212529;
+.mail {
+  font-size: 5rem;
+  text-align: center;
+  background: -webkit-linear-gradient(right, #ffe066, #20c997);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
 }
 
 footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 3.2rem;
+  padding-top: 3.2rem;
+  padding-bottom: 1.2rem;
 }
 
 .source-code {
   display: flex;
   margin-left: 4.8rem;
   align-items: flex-end;
+  text-decoration: none;
 }
 
 .source-code img {
@@ -533,11 +519,17 @@ footer {
   html {
     font-size: 8px;
   }
+  .logo {
+    letter-spacing: -12px;
+  }
 }
 
 @media (max-width: 1040px) {
   html {
     font-size: 7px;
+  }
+  .logo {
+    letter-spacing: -10px;
   }
 }
 
@@ -545,9 +537,19 @@ footer {
   html {
     font-size: 9px;
   }
-
+  .logo {
+    letter-spacing: -14px;
+  }
   .big-heading {
     font-size: 9.5rem;
+  }
+
+  #projects {
+    margin: 5.6;
+  }
+
+  .section-heading {
+    margin-top: 8rem;
   }
 
   .about-section {
@@ -566,46 +568,42 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .exp {
-    grid-template-columns: 1fr 1.5fr;
-    justify-self: center;
-  }
-
-  .contact-form {
-    grid-template-columns: 1fr;
-  }
-
-  #email,
-  #message,
-  #contact-submit {
-    grid-column-start: span 1;
-  }
-
-  .project-description p {
-    display: none;
-  }
-
   .project {
     grid-template-columns: 1fr;
     justify-items: center;
+    padding:0 8rem;
   }
 
   .project-heading {
     grid-column-start: span 1;
-    font-size: 1.6rem;
-  }
-  .project-description a {
-    margin-top: 0;
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 1.5;
   }
 
-  .contact-form {
-    max-width: 80vw;
+  .project img {
+    width: 100%;
+  }
+  .mail {
+    font-size: 4rem;
+  }
+  .black-btn{
+    width: 100%;
+    color: white;
+    background-color: #212529;  
   }
 }
 
 @media (max-width: 720px) {
   .big-heading {
     font-size: 8rem;
+  }
+  
+  .project-heading {
+    font-size: 2rem;
+  }
+  .project {
+    padding:0 4rem;
   }
 }
 
@@ -630,9 +628,7 @@ footer {
   .skill {
     max-width: 90vw;
   }
-  .project img {
-    width: 90vw;
-  }
+
   .exp-history {
     max-width: 80vw;
   }
@@ -647,23 +643,31 @@ footer {
     font-size: 2.4rem;
   }
 
-  .project-heading {
-    letter-spacing: .2rem;
-    font-size: 1.8rem;
-  }
-
-  .black-btn{
-    width: 90vw;
-  }
+  
 }
 
 @media (max-width: 530px) {
   html {
     font-size: 7px;
   }
+  .logo {
+    letter-spacing: -10px;
+  }
+  .big-heading {
+    font-size: 7rem;
+  }
 
   footer {
     font-size: 2.4rem;
   }
+  .mail {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width:420px){
+  .big-heading {
+    font-size: 5.5rem;
+  } 
 }
 

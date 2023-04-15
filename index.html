@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amit Kharod</title>
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./index.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
@@ -18,10 +18,9 @@
         ><span class="logo-item1">a</span
         ><span class="logo-item2">k</span></span
       >
-      <button class="nav-item active" data-block="home">Home</button>
-      <button class="nav-item" data-block="skills">Skills</button>
-      <button class="nav-item" data-block="projects">Projects</button>
-      <button class="nav-item" data-block="contact">Contact</button>
+        <a class="home active" href="#home">Home</a>
+        <a class="skills" href="#skills">Skills</a>
+        <a class="projects" href="#projects">Projects</a>
     </nav>
     <section id="home">
       <h1 class="big-heading">
@@ -39,16 +38,14 @@
           </p>
           <div class="socials">
             <span class="social-img"
-              ><img src="./images/icons/github.svg" alt="" /></span
+              ><a href="https://github.com/Amit-kharod" target="_blank"><img src="./images/icons/github.svg" alt="" /></a></span
             ><span class="social-img">
-              <img src="./images/icons/instagram.svg" alt="" /> </span
+              <a href="https://www.instagram.com/codemanyt/" target="_blank"><img src="./images/icons/instagram.svg" alt="" /></a> </span
             ><span class="social-img">
-              <img src="./images/icons/youtube.svg" alt="" /> </span
+              <a href="https://www.youtube.com/@CodeManYoutube" target="_blank"><img src="./images/icons/youtube.svg" alt="" /></a> </span
             ><span class="social-img">
-              <img src="./images/icons/linkedin.svg" alt="" /> </span
-            ><span class="social-img">
-              <img src="./images/icons/twitter.svg" alt="" />
-            </span>
+              <a href="https://www.linkedin.com/in/amit-kharod/" target="_blank"><img src="./images/icons/linkedin.svg" alt="" /></a> </span
+            >
           </div>
         </div>
       </div>
@@ -75,7 +72,7 @@
           </div>
           <div class="skill-heading">JAVASCRIPT</div>
           <div class="skill-detail">
-            COMFORTABLE WITH FLEXBOX, GRID, ANIMATION AND RESPONSIVE DESIGN
+            COMFORTABLE WITH OBJECT ORIENTED PROGRAMMING, MAKING APIs USING EXPRESSJS
           </div>
         </div>
         <div class="skill">
@@ -84,79 +81,35 @@
           </div>
           <div class="skill-heading">REACT</div>
           <div class="skill-detail">
-            COMFORTABLE WITH FLEXBOX, GRID, ANIMATION AND RESPONSIVE DESIGN
+            COMFORTABLE WITH REACT HOOKS AND LIBRARIES
           </div>
         </div>
         <div class="skill">
           <div class="skill-img">
-            <img src="./images/icons/github.png" alt="" />
+            <img class=mongo src="./images/icons/mongo.png" alt="" />
           </div>
-          <div class="skill-heading">GITHUB</div>
+          <div class="skill-heading">MONGODB</div>
           <div class="skill-detail">
-            COMFORTABLE WITH FLEXBOX, GRID, ANIMATION AND RESPONSIVE DESIGN
+            COMFORTABLE WITH CREATING AND MODIFYING SCHEMAS USING MONGOOSE LIBRARY
           </div>
         </div>
       </div>
     </section>
-
-    <section id="experience">
-      <h1 class="section-heading">Experience</h1>
-      <div class="exp-history">
-        <div class="exp">
-          <div class="exp-date">
-            <img class="small-icon" src="./images/icons/calander.svg" alt="" />
-            <span>2019-2021</span>
-          </div>
-          <div class="exp-details">
-            <h3>Senior Developer</h3>
-            <div class="address">
-              <h3 class="bold">Google Inc.</h3>
-              <div class="location">
-                <img
-                  class="very-small-icon"
-                  src="./images/icons/location.svg"
-                  alt=""
-                />
-                <h3>Gurugram</h3>
-              </div>
-            </div>
-            <div class="exp-list">
-              <li>Worked with frontend team on reactjs</li>
-              <li>Worked in a collaborative environment</li>
-              <li>Managed data scaling solution at Google</li>
-            </div>
-          </div>
-        </div>
-        <div class="exp">
-          <div class="exp-date">
-            <img class="small-icon" src="./images/icons/calander.svg" alt="" />
-            <span>2021-PRESENT</span>
-          </div>
-          <div class="exp-details">
-            <h3>Backend Developer</h3>
-            <div class="address">
-              <h3 class="bold">Microsoft Inc.</h3>
-              <div class="location">
-                <img
-                  class="very-small-icon"
-                  src="./images/icons/location.svg"
-                  alt=""
-                />
-                <h3>Gurugram</h3>
-              </div>
-            </div>
-            <div class="exp-list">
-              <li>Worked with frontend team on reactjs</li>
-              <li>Worked in a collaborative environment</li>
-              <li>Managed data scaling solution at Google</li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="projects">
       <h1 class="section-heading">Projects</h1>
+      <div class="project">
+        <h2 class="project-heading">CSMATERIAL.IN</h2>
+        <div class="project-img">
+          <img src="./images/other/project3.png" alt="" />
+        </div>
+        <div class="project-description">
+          <p>
+          CSMATERIAL.IN is a one-stop solution for computer science students, providing access to previous year question papers, solved assignments, study material, and more. Built this website in 2 weeks using MERN stack. Before this I have never developed a responsive and production website which is publically available to use.
+        to  The website is aimed at helping their fellow students succeed. With a user-friendly interface and a comprehensive collection of resources.
+          </p>
+          <a href="https://csmaterial.in" class="black-btn">Visit</a>
+        </div>
+      </div>
       <div class="project">
         <h2 class="project-heading">UNIVERSITY MANAGEMENT SYSTEM</h2>
         <div class="project-img">
@@ -164,66 +117,21 @@
         </div>
         <div class="project-description">
           <p></p>
-            This project is based on web technology. So, it is easily accessible
-            for users. Backend is the core of this project. API (Application
-            Programming Interface) is used for communication between Frontend
-            and Backend. Technologies that are used in this project are –
-            Nodejs, Reactjs, CSS, HTML, Heroku, MongoDb. The main feature of
-            this project is to handle complex data through API. REST API is used
-            to handle all backend process.
+            I built this website in 2 months for minor project submission in my MCA 2nd sem. But this is not minor from any angle. This was my first introduction to MERN stack and how frontend and backend can work together as a team. There are small bugs in this project and it is also not responsive. Maybe in future I will complete this project and deploy it.
           </p>
-          <a href="#" class="black-btn">Explore </a>
-        </div>
-      </div>
-      <div class="project">
-        <h2 class="project-heading">PROGRAMMING QUIZ</h2>
-        <div class="project-img">
-          <img src="./images/other/project2.png" alt="" />
-        </div>
-        <div class="project-description">
-          <p>
-            This project is based on web technology. So, it is easily accessible
-            for users. Backend is the core of this project. API (Application
-            Programming Interface) is used for communication between Frontend
-            and Backend. Technologies that are used in this project are –
-            Nodejs, Reactjs, CSS, HTML, Heroku, MongoDb. The main feature of
-            this project is to handle complex data through API. REST API is used
-            to handle all backend process.
-          </p>
-          <a href="#" class="black-btn">Explore </a>
+          <a href="#" class="black-btn">Source Code</a>
         </div>
       </div>
     </section>
     <section id="contact">
-      <h2 class="contact-heading">Contact</h2>
-      <form action="#" class="contact-form">
-        <input
-          type="text"
-          name="first-name"
-          id="first-name"
-          placeholder="First Name"
-        />
-        <input
-          type="text"
-          name="last-name"
-          id="last-name"
-          placeholder="Last Name"
-        />
-        <input type="email" name="email" id="email" placeholder="Email" />
-        <input
-          type="text"
-          name="message"
-          id="message"
-          placeholder="Drop your message here"
-        />
-        <button type="submit" id="contact-submit">SEND</button>
-      </form>
+      <h2 class="contact-heading">Get in touch</h2>
+      <h1 class="mail">codeman.amit@gmail.com</h1>
       <footer>
         <h6 class="end-note">Made with 💙 by Amit Kharod</h6>
-        <div class="source-code">
+        <a href="https://github.com/Amit-kharod/portfolio-website" target="_blank" class="source-code">
           <img src="./images/icons/github.svg" alt="" />
           <h6>Source Code</h6>
-        </div>
+        </a>
       </footer>
     </section>
   </body>
