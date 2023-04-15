@@ -55,10 +55,14 @@ body {
   font-size: 1.6rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar {
   display: flex;
   justify-content: flex-end;
-  align-items: baseline;
+  align-items: center;
   background-color: rgb(255, 255, 255);
   opacity: 0.98;
   position: sticky;
@@ -81,6 +85,10 @@ body {
   font-size: 6.4rem;
   letter-spacing: -14px;
   font-weight: 300;
+}
+
+.logo-link {
+  margin: 0 auto 0 0;
 }
 
 .logo-item1 {
