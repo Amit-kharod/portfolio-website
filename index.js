@@ -12,7 +12,7 @@ window.addEventListener("scroll", () => {
       current = section.getAttribute("id");
     }
   });
-  console.log(current);
+
   links.forEach((link) => {
     link.classList.remove("active");
     if (link.classList.contains(current)) {
