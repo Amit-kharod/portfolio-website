@@ -51,9 +51,10 @@
           ><span class="logo-item2">k</span></span
         >
       </a>
-      <a class="home active" href="#home">Home</a>
-      <a class="skills" href="#skills">Skills</a>
-      <a class="projects" href="#projects">Projects</a>
+      <a class="home menu-item active" href="#home">Home</a>
+      <a class="skills menu-item" href="#skills">Skills</a>
+      <a class="experience menu-item" href="#experience">Experience</a>
+      <a class="projects menu-item" href="#projects">Projects</a>
     </nav>
     <section id="home">
       <h1 class="big-heading">
@@ -66,13 +67,17 @@
         <div class="about-me">
           <h2 class="about-heading">ABOUT ME</h2>
           <p class="bio">
-            "I am aspiring Full Stack Web Developer, persuing MCA degree. I love
-            teaching programming in a simple and enjoyble manner."
+            "Currently working as a Full Stack Web Developer. I love teaching
+            programming in a simple and enjoyable manner."
           </p>
           <div class="socials">
             <span class="social-img"
               ><a href="https://github.com/Amit-kharod" target="_blank"
-                ><img src="./images/icons/github.svg" alt="" /></a></span
+                ><img src="./images/icons/github.svg" alt="" /></a
+            ></span>
+            <span class="social-img"
+              ><a href="https://leetcode.com/Amit-kharod/" target="_blank"
+                ><img src="./images/icons/leetcode.png" alt="" /></a></span
             ><span class="social-img">
               <a href="https://www.instagram.com/codemanyt/" target="_blank"
                 ><img src="./images/icons/instagram.svg" alt=""
@@ -137,6 +142,28 @@
         </div>
       </div>
     </section>
+    <section id="experience">
+      <h1 class="section-heading">Experience</h1>
+      <div class="exp">
+        <div class="exp-date">
+          <i data-lucide="calendar"></i>
+          <span> Jul 2023 - PRESENT </span>
+        </div>
+        <div class="exp-details">
+          <span>Full Stack Developer Internship</span>
+          <div class="location">
+            <span>at Rancho Labs</span>
+            <i data-lucide="map-pin"></i>
+            <span>New Delhi</span>
+          </div>
+          <ul>
+            <li>Collaborately developing end-to-end Web application</li>
+            <li>Using modern technologies like- NEXTjs, Threejs, Prisma</li>
+            <li>Implementing complex logic to simulate Arduino on web</li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section id="projects">
       <h1 class="section-heading">Projects</h1>
       <div class="project">
@@ -192,5 +219,9 @@
         </a>
       </footer>
     </section>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
